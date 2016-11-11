@@ -1,0 +1,15 @@
+# test1.pn
+plc P1 200 100
+plc P2 100 300
+plc P3 300 300
+trn t1 200 200
+trn t2 100 400
+trn t3 300 400
+apt P1 t1 1
+atp t1 P2 1
+atp t1 P3 1
+apt P2 t2 1
+apt P3 t3 1
+atp t3 P1 1
+atp t2 P1 1
+ini P1 1

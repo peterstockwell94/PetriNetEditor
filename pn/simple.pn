@@ -1,0 +1,18 @@
+# Simple Producer/Buffer/Consumer
+plc P1 100 200
+plc P2 300 300
+plc P3 300 100
+plc P4 500 200
+trn put 200 200
+trn get 400 200
+apt P1 put 1
+apt P2 put 1
+apt P3 get 1
+apt P4 get 1
+atp put P1 1
+atp put P3 1
+atp get P2 1
+atp get P4 1
+ini P1 1
+ini P2 1
+ini P4 1
